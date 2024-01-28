@@ -1,3 +1,7 @@
-FROM MONGO
+FROM gitpod/workspace-full
 
-EXPOSE 27017
+USER gitpod
+
+RUN brew tap mongodb/brew && brew install mongodb-community@4.4
+
+USER root
