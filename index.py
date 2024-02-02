@@ -10,7 +10,8 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from collections import Counter
 
 local_folder_path = 'results_folder'
-cosmosdb_connection_string = "mongodb://azureindex:8kSPAOoQoUGksqV08xAf1INaV1arBcWepSm6BMjsJLyYgTWacTwkzlQMjMRT4ZEd6O4thWBWJ3jhACDbkLLcBA==@azureindex.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@azureindex@"
+# update the below string with the actual cosmosdb connection string
+cosmosdb_connection_string = "COSMOSDB_CONNECTION_STRING_FROM_AZURE"
 client = pymongo.MongoClient(cosmosdb_connection_string)
 db = client["Indexer"]
 collection = db["Words"]
