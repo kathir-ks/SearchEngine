@@ -43,7 +43,7 @@ if(!fs.existsSync(resultsFolder)){
             {
                 try {
                 
-                    // Set page timeout to 30 seconds
+                    // Set page timeout to 15 seconds
                     page.setDefaultTimeout(15000);
                     
                     const robotsTxtUrl = `${domainWithProtocol}/robots.txt`;
